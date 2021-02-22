@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/app/environments/environment';
 import { IEpisodeList } from './iepisode-list';
 import { IEpisodeListData } from './iepisode-list-data';
 import { map } from 'rxjs/operators';
@@ -18,6 +18,7 @@ export class EpisodesService {
       map(data => this.transformToIEpisodeList(data))
     )
   }
+
 
   private transformToIEpisodeList(data: IEpisodeListData): IEpisodeList {
     return {
