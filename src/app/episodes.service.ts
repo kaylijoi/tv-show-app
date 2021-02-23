@@ -21,11 +21,12 @@ export class EpisodesService {
 
 
   private transformToIEpisodeList(data: IEpisodeListData): IEpisodeList {
+    let summ_len = data[0].summary.length;
     return {
       number: data[0].number,
       name: data[0].name,
       airdate: data[0].airdate,
-      summary: data[0].summary
+      summary: data[0].summary.substring(3,summ_len-4)
     }
   }
 }

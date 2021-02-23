@@ -46,5 +46,5 @@ testem.log
 Thumbs.db
 
 package-lock.json
-/src/app/environments/environments.ts
-/scr/app/environments/environments.prod.ts
+/src/app/environments/environment.ts
+/scr/app/environments/environment.prod.ts
