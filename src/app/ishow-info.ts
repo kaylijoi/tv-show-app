@@ -6,4 +6,10 @@ export interface IShowInfo {
   characterName: string
   headshot: string
 
+  //Show Details Data
+  platform: string
+  genres: string
+  numberOfEpisodes: number
+  createdBy: string
+
 }

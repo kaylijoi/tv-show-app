@@ -17,6 +17,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowSearchComponent } from './show-search/show-search.component';
+import { ShowDetailsComponent } from './show-details/show-details.component';
+
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ShowSearchComponent } from './show-search/show-search.component';
     AppComponent,
     CastComponent,
     EpisodeListComponent,
-    ShowSearchComponent
+    ShowSearchComponent,
+    ShowDetailsComponent
+
   ],
   imports: [
     BrowserModule,
