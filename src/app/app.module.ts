@@ -19,6 +19,7 @@ import { ShowSearchComponent } from './show-search/show-search.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
 import { ShowSummaryComponent } from './show-summary/show-summary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { StatusComponent } from './status/status.component';
 
 
 
@@ -29,7 +30,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     EpisodeListComponent,
     ShowSearchComponent,
     ShowDetailsComponent,
-    ShowSummaryComponent
+    ShowSummaryComponent,
+    StatusComponent
 
   ],
   imports: [
