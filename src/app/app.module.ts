@@ -1,11 +1,10 @@
-import { CastListService } from './cast-list.service';
+import { ShowInfoService } from './show-info.service';
 import { EpisodesService } from './episodes.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CastComponent } from './cast/cast.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EpisodeListComponent } from './episode-list/episode-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,16 +17,17 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowSearchComponent } from './show-search/show-search.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
+import { ShowSummaryComponent } from './show-summary/show-summary.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CastComponent,
     EpisodeListComponent,
     ShowSearchComponent,
-    ShowDetailsComponent
+    ShowDetailsComponent,
+    ShowSummaryComponent
 
   ],
   imports: [
@@ -46,7 +46,7 @@ import { ShowDetailsComponent } from './show-details/show-details.component';
   ],
   providers: [
     EpisodesService,
-    CastListService
+    ShowInfoService
   ],
   bootstrap: [AppComponent]
 })

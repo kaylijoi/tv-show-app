@@ -1,15 +1,25 @@
 export interface IShowInfo {
 
-
-  // Cast Information Data
+  id: number
+  //title
   name: string
-  characterName: string
-  headshot: string
+  summary: string
+  image: string
+  rating: number
+
+  //Status
+  status: string
+  runtime: number
+  premier: Date
+
+  //Schedule
+  time: string
+  days: string
 
   //Show Details Data
   platform: string
   genres: string
-  numberOfEpisodes: number
+  // numberOfEpisodes: number
   createdBy: string
 
 }

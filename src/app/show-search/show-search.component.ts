@@ -1,4 +1,4 @@
-import { CastListService } from './../cast-list.service';
+import { ShowInfoService } from './../show-info.service';
 import { Component, OnInit } from '@angular/core';
 import { debounceTime } from 'rxjs/operators';
 import { FormControl } from '@angular/forms'
@@ -10,7 +10,7 @@ import { FormControl } from '@angular/forms'
 })
 export class ShowSearchComponent implements OnInit {
   search = new FormControl();
-  constructor(private castListService: CastListService) { }
+  constructor(private showInfoService: ShowInfoService) { }
 
   ngOnInit(): void {
     // this.search.valueChanges
