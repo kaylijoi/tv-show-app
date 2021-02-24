@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowSearchComponent } from './show-search/show-search.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
 import { ShowSummaryComponent } from './show-summary/show-summary.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -42,7 +44,8 @@ import { ShowSummaryComponent } from './show-summary/show-summary.component';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatGridListModule
   ],
   providers: [
     EpisodesService,

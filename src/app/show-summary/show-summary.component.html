@@ -1,6 +1,12 @@
 <div *ngIf="current">
-  <img src={{current.image}}>
-  <h1>{{current.name}}</h1>
-  <p>{{current.summary}}</p>
-  <p>{{current.rating}} </p>
+  <mat-card class = "summaryCard">
+    <mat-card-content class="summaryCardContent">
+      <img mat-card-image src={{current.image}}>
+      <div>
+        <mat-card-title>{{current.name}}</mat-card-title>
+        <div>{{current.summary}}</div>
+        <div>{{current.rating}}</div>
+      </div>
+    </mat-card-content> 
+  </mat-card>
 </div>

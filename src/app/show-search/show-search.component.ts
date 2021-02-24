@@ -13,18 +13,17 @@ export class ShowSearchComponent implements OnInit {
   constructor(private showInfoService: ShowInfoService) { }
 
   ngOnInit(): void {
-    // this.search.valueChanges
-    // .pipe(debounceTime(1000))
-    // .subscribe((searchValue: string) => {
-    //   if(searchValue) {
-    //     const userInput = searchValue {
-    //       this.CastList.getCastList(
-    //         userInput
-    //         .subscribe(data => console.log(data))
-    //       )
-    //     }
-      // }
-    // })
+    this.search.valueChanges
+    .pipe(debounceTime(1000))
+    .subscribe((searchValue: string) => {
+      if(searchValue) {
+        const userInput = searchValue 
+        this.showInfoService.getShowInfo(
+          userInput)
+          .subscribe(data => console.log(data))
+        }
+      }
+    )
   }
 
 }

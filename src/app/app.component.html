@@ -1,12 +1,35 @@
 <h1 class="jumbotron">Tv Show App</h1>
+<mat-grid-list cols="1" rowHeight="7:1">
+  <app-show-search></app-show-search>
+</mat-grid-list>
 
-<mat-card color="primary">
-  <app-show-summary></app-show-summary>
-</mat-card>
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card color="primary">
+      <app-show-summary></app-show-summary>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card color="primary">
+      <app-episode-list></app-episode-list>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card color="primary">
+      <app-show-details></app-show-details>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
 
-<mat-card color="primary">
-  <app-episode-list></app-episode-list>
-</mat-card>
 
-<app-show-details></app-show-details>
+
+
+
+
+
+
 

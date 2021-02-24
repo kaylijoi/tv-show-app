@@ -13,12 +13,16 @@ export class ShowInfoService {
 
   constructor(private httpClient:HttpClient) { }
 
-    getShowInfo(show: string) {
-      return this.httpClient.get<IShowInfoData>(`http://api.tvmaze.com/singlesearch/shows?q=${show}`).pipe(
+    getShowInfo(search: string) {
+      let uriParams = '';
+      if (typeof search === 'string') {
+        uriParams = `q=${search}`
+      }
+
+      return this.httpClient.get<IShowInfoData>(`http://api.tvmaze.com/singlesearch/shows?${uriParams}`).pipe(
         map(data => this.transformToIShowInfo(data))
       )
     }
-  
   
     private transformToIShowInfo(data: IShowInfoData): IShowInfo {
       let summ_len = data.summary.length;
