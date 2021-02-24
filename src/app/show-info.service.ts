@@ -14,7 +14,7 @@ export class ShowInfoService {
   constructor(private httpClient:HttpClient) { }
 
     getShowInfo(show: string) {
-      return this.httpClient.get<IShowInfoData>(`http://api.tvmaze.com/shows?q=${show}`).pipe(
+      return this.httpClient.get<IShowInfoData>(`http://api.tvmaze.com/singlesearch/shows?q=${show}`).pipe(
         map(data => this.transformToIShowInfo(data))
       )
     }
