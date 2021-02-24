@@ -13,6 +13,7 @@ export class ShowInfoService {
 
   constructor(private httpClient:HttpClient) { }
 
+
     getShowInfo(search: string) {
       let uriParams = '';
       if (typeof search === 'string') {
@@ -45,12 +46,13 @@ export class ShowInfoService {
         days: data.schedule.days,
 
         //Show Details Data
-        platform: data.network.name,
-        genres: data.genres,
-        createdBy: data.network.name
+        Genres: data.genres[0],
+        OfficialSite: data.officialSite,
+        Network: data.network.name
 
       }
     }
+
 
 }
 

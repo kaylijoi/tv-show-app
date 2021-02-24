@@ -1,11 +1,10 @@
 
-  <div id="mian">
+  <div id="mian" *ngIf="details">
     <h4 class ="title">Show Details</h4>
     <div id="wrapper">
-      <div id="inner1">Platform</div>
-      <div id="inner2">Genres</div>
-      <div id ="inner3">No Of Episodes</div>
-      <div id ="inner4">Created By</div> 
+      <div id="inner1">Generes:{{details.Genres}}</div>
+      <div id ="inner2">OfficialSite:{{details.OfficialSite}}</div>
+      <div id ="inner3">Network:{{details.Network}}</div> 
     </div>
 
   </div>

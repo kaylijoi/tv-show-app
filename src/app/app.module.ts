@@ -17,10 +17,9 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowSearchComponent } from './show-search/show-search.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
+
 import { ShowSummaryComponent } from './show-summary/show-summary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-
-
 
 
 @NgModule({

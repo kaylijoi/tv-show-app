@@ -1,5 +1,6 @@
 export interface IShowInfo {
 
+
   id: number
   //title
   name: string
@@ -17,9 +18,10 @@ export interface IShowInfo {
   days: string
 
   //Show Details Data
-  platform: string
-  genres: string
-  // numberOfEpisodes: number
-  createdBy: string
+  
+  Genres: string
+  OfficialSite: string
+  Network: string
+
 
 }
