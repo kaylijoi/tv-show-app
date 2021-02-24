@@ -1,19 +1,23 @@
+.showTitle {
 
+}
 
 .summaryCard {
-  max-width: 1000px;
   max-height: 1000px;
-  margin-top: 50px;
-  align-items: center;
+  margin: 50px 20px 50px 20px;
+
 }
 
 .mat-card-image {
-  margin: 0;
   height: 100%;
-  padding: 50px;
+  padding-right: 50px;
 }
 
 .summaryCardContent {
   display: flex;
-  justify-content: space-between;
+}
+
+.summaryText {
+  text-align: left;
+  font-size: 14px;
 }

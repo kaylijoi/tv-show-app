@@ -25,14 +25,13 @@ export class ShowInfoService {
     }
   
     private transformToIShowInfo(data: IShowInfoData): IShowInfo {
-      let summ_len = data.summary.length;
 
       return {
         
         id: data.id,
         //title
         name: data.name,
-        summary: data.summary.substring(3,summ_len-4),
+        summary: data.summary,
         image: data.image.medium,
         rating: data.rating.average,
 
