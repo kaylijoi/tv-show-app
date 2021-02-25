@@ -21,9 +21,9 @@ export class ShowSummaryComponent implements OnInit {
       premier: new Date,
       time: '',
       days: '',
-      platform: '',
-      genres: '',
-      createdBy: ''
+      Network: '',
+      Genres: '',
+      OfficialSite: ''
     }
   }
 

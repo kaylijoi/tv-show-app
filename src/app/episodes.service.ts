@@ -18,8 +18,7 @@ export class EpisodesService {
       map(data => this.transformToIEpisodeList(data))
     )
   }
-
-
+  
   private transformToIEpisodeList(data: IEpisodeListData): IEpisodeList {
     let summ_len = data[0].summary.length;
     return {

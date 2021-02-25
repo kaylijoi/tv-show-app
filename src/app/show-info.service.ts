@@ -13,6 +13,7 @@ export class ShowInfoService {
 
   constructor(private httpClient:HttpClient) { }
 
+
     getShowInfo(search: string) {
       let uriParams = '';
       if (typeof search === 'string') {
@@ -25,14 +26,13 @@ export class ShowInfoService {
     }
   
     private transformToIShowInfo(data: IShowInfoData): IShowInfo {
-      let summ_len = data.summary.length;
 
       return {
         
         id: data.id,
         //title
         name: data.name,
-        summary: data.summary.substring(3,summ_len-4),
+        summary: data.summary,
         image: data.image.medium,
         rating: data.rating.average,
 
@@ -46,12 +46,13 @@ export class ShowInfoService {
         days: data.schedule.days,
 
         //Show Details Data
-        platform: data.network.name,
-        genres: data.genres,
-        createdBy: data.network.name
+        Genres: data.genres[0],
+        OfficialSite: data.officialSite,
+        Network: data.network.name
 
       }
     }
+
 
 }
 

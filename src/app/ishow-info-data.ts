@@ -1,7 +1,8 @@
 export interface IShowInfoData {
+
   id: number,
   name: string,
-  genres: string,
+  genres: string[],
   status: string,
   runtime: number,
   premiered: string,
@@ -22,6 +23,4 @@ export interface IShowInfoData {
     medium: string
   },
   summary: string
-  
-  
 }
