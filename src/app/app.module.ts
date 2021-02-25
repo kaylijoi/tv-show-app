@@ -20,8 +20,8 @@ import { ShowDetailsComponent } from './show-details/show-details.component';
 
 import { ShowSummaryComponent } from './show-summary/show-summary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { ShowScheduleComponent } from './show-schedule/show-schedule.component';
-
+import { ShowScheduleComponent }from './show-schedule/show-schedule.component';
+import { StatusComponent} from './status/status.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,8 @@ import { ShowScheduleComponent } from './show-schedule/show-schedule.component';
     ShowSearchComponent,
     ShowDetailsComponent,
     ShowSummaryComponent,
-    ShowScheduleComponent
-
+    ShowScheduleComponent,
+    StatusComponent
   ],
   imports: [
     BrowserModule,
