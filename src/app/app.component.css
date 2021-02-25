@@ -1,0 +1,9 @@
+mat-card {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+mat-grid-tile {
+  border: 1px solid black;
+}

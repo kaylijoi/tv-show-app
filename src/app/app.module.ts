@@ -20,6 +20,7 @@ import { ShowDetailsComponent } from './show-details/show-details.component';
 
 import { ShowSummaryComponent } from './show-summary/show-summary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ShowScheduleComponent } from './show-schedule/show-schedule.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     EpisodeListComponent,
     ShowSearchComponent,
     ShowDetailsComponent,
-    ShowSummaryComponent
+    ShowSummaryComponent,
+    ShowScheduleComponent
 
   ],
   imports: [
