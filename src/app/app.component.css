@@ -12,8 +12,10 @@ header {
   margin-bottom: 3em;
 } */
 
-* {
+
+body {
   background-color: #18191A;
+  color: #E4E6EB;
 }
 
 mat-card {
@@ -39,6 +41,7 @@ mat-card {
 }
 
 .search {
-  padding: 1em;
+  margin: 1em 0 2em 0;
   text-align: center;
 }
+

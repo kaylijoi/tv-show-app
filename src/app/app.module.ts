@@ -22,6 +22,7 @@ import { ShowSummaryComponent } from './show-summary/show-summary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ShowScheduleComponent }from './show-schedule/show-schedule.component';
 import { StatusComponent} from './status/status.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { StatusComponent} from './status/status.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [
     EpisodesService,

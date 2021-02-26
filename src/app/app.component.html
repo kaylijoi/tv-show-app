@@ -1,5 +1,4 @@
-<header><mat-toolbar color="primary">Tv Show App</mat-toolbar>
-</header>
+<mat-toolbar color="primary">Tv Show App</mat-toolbar>
 <body>
 
 <!-- <mat-grid-list cols="1" rowHeight="3:1">
@@ -26,7 +25,7 @@
 </mat-grid-list>
  -->
 
-<section class="container content">
+<!-- <section class="container content">
   <div class="row">
     <mat-card class="search col-lg-12">
       <app-show-search></app-show-search>
@@ -59,5 +58,30 @@
       </mat-card>
     </mat-card>
   </div>
+</section> -->
+
+<section class="container content">
+  <div class="row">
+    <mat-card class="search col-lg-12">
+      <app-show-search></app-show-search>
+    </mat-card>
+  </div>
+  
+  <mat-tab-group>
+    <mat-tab label="Summary">
+      <app-show-summary></app-show-summary>
+    </mat-tab>
+    <mat-tab label="Details">
+      <app-show-details></app-show-details>
+    </mat-tab>
+    <mat-tab label="Schedule">
+      <app-show-schedule></app-show-schedule>
+
+    </mat-tab>
+    <mat-tab label="Status">
+      <app-status></app-status>
+
+    </mat-tab>
+  </mat-tab-group>
 </section>
 </body>
