@@ -1,21 +1,25 @@
-.summaryCard {
-  max-height: 1000px;
-  margin: 50px 20px 50px 20px;
+/* .summary-component {
+  background-color: #424242;
+  padding:
+} */
 
-}
+.title {
+  font-size: 30px;
+  font-style: bold;
 
-.mat-card-image {
-  height: 100%;
-  float: left;
-  padding-right: 50px;
-}
-
-.summaryCardContent {
-  display: flex;
-  text-align: left;
 }
 
 .summaryText {
-  text-align: left;
-  font-size: 14px;
+  color: #E4E6EB;
+  font-weight: 100;
+}
+
+.rating {
+  color: #BB86FC;
+  font-weight: 100;
+}
+
+img {
+  float: left;
+  padding: 0 2em 1em 0;
 }

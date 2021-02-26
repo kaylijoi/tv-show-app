@@ -1,10 +1,8 @@
-<mat-toolbar color="primary">
-  <span>Tv Show App</span>
-</mat-toolbar>
-<mat-grid-list cols="1" rowHeight="7:1">
-  <app-show-search></app-show-search>
-</mat-grid-list>
-<mat-grid-list cols="1" rowHeight="3:1">
+<header><mat-toolbar color="primary">Tv Show App</mat-toolbar>
+</header>
+<body>
+
+<!-- <mat-grid-list cols="1" rowHeight="3:1">
   <mat-grid-tile>
     <mat-card color="primary">
       <app-show-summary></app-show-summary>
@@ -26,3 +24,40 @@
     <app-status></app-status>
   </mat-grid-tile>
 </mat-grid-list>
+ -->
+
+<section class="container content">
+  <div class="row">
+    <mat-card class="search col-lg-12">
+      <app-show-search></app-show-search>
+    </mat-card>
+  </div>
+  <div class="row">
+    <mat-card class="outer col-lg-12">
+      <mat-card class="inner col-lg-12">
+        <app-show-summary></app-show-summary>
+      </mat-card>
+    </mat-card>
+
+  </div>
+  <div class="row">
+    <mat-card class="outer col-lg-4 col-sm-12">
+      <mat-card class="inner col-lg-12">
+        <app-show-details></app-show-details>
+      </mat-card>
+    </mat-card>
+
+    <mat-card class="outer col-lg-4 col-sm-12">
+      <mat-card class=" inner col-lg-12">
+        <app-show-schedule></app-show-schedule>
+      </mat-card>
+    </mat-card>
+
+    <mat-card class="outer col-lg-4 col-sm-12">
+      <mat-card class="inner col-lg-12">
+        <app-status></app-status>
+      </mat-card>
+    </mat-card>
+  </div>
+</section>
+</body>
