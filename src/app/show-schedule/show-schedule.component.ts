@@ -22,7 +22,7 @@ export class ShowScheduleComponent implements OnInit {
       time: '',
       days: '',
       Network: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: ''
     };
   }

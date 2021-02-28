@@ -19,7 +19,7 @@ export interface IShowInfo {
 
   //Show Details Data
   
-  Genres: string
+  Genres: string[]
   OfficialSite: string
   Network: string
 

@@ -21,7 +21,7 @@ export class ShowSummaryComponent implements OnInit {
       time: '',
       days: '',
       Network: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: ''
     };
   }

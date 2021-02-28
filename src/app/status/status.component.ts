@@ -22,7 +22,7 @@ export class StatusComponent implements OnInit {
       time: '',
       days: '',
       Network: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: ''
     };
   }

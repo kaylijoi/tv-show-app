@@ -24,7 +24,7 @@ export class AppComponent {
       premier: new Date(),
       time: '',
       days: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: '',
       Network: ''
     }

@@ -8,10 +8,19 @@ import { IShowInfo } from '../ishow-info';
 })
 export class ShowDetailsComponent implements OnInit {
 
+
   @Input() details : IShowInfo         
 
   constructor() { 
     this.details ={
+
+  /* current : IShowInfo         
+
+  constructor(private showInfoService : ShowInfoService) { 
+    this.current ={
+ */
+     
+
       id: 1,
       name: '',
       summary: '',
@@ -23,11 +32,19 @@ export class ShowDetailsComponent implements OnInit {
       time: '',
       days: '',
       Network: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: ''
     };
     }
   
+
   ngOnInit(): void {  }
+
+  
+
+  /* ngOnInit(): void {
+    this.showInfoService.getShowInfo('Lost').subscribe(data => this.current = data);
+  } */
+
 }
   
