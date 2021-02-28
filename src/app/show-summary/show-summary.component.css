@@ -2,7 +2,18 @@
   background-color: #424242;
   padding:
 } */
+mat-card {
+  min-height: 325px;
+  background-color: #242526;
+}
 
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+  box-shadow: none;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
 .title {
   font-size: 30px;
   font-style: bold;
@@ -22,4 +33,5 @@
 img {
   float: left;
   padding: 0 2em 1em 0;
+  margin-bottom: auto;
 }
