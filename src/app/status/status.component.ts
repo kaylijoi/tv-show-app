@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IShowInfo } from '../ishow-info';
 
 @Component({
   selector: 'app-status',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatusComponent implements OnInit {
 
-  constructor() { }
+  @Input() current:IShowInfo
+  constructor() { 
+    this.current = {
+      id: 1,
+      name: '',
+      summary: '',
+      image: '',
+      rating: 0,
+      status: '',
+      runtime: 0,
+      premier: new Date(),
+      time: '',
+      days: '',
+      Network: '',
+      Genres: '',
+      OfficialSite: ''
+    };
+  }
 
   ngOnInit(): void {
   }

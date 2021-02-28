@@ -3,6 +3,7 @@
       <input matInput placeholder="  Enter show name" [formControl] = "search"/>
     <mat-icon matSuffix>search</mat-icon>
     <mat-hint>Example: "Lost"</mat-hint>
+    <mat-error *ngIf="search.invalid">Type 3 or more characters to search</mat-error>
   </mat-form-field>
 
 </form>
