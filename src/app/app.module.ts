@@ -1,12 +1,10 @@
 import { ShowInfoService } from './show-info.service';
-import { EpisodesService } from './episodes.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import { EpisodeListComponent } from './episode-list/episode-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule} from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,7 +25,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
-    EpisodeListComponent,
     ShowSearchComponent,
     ShowDetailsComponent,
     ShowSummaryComponent,
@@ -51,7 +48,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTabsModule
   ],
   providers: [
-    EpisodesService,
     ShowInfoService
   ],
   bootstrap: [AppComponent]

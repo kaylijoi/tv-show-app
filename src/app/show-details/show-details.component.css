@@ -5,3 +5,27 @@
   white-space: nowrap; 
   /* overflow:-moz-hidden-unscrollable; */
 }
+
+mat-card {
+  background-color: #242526;
+}
+
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+  box-shadow: none;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.title {
+  font-size: 25px;
+  font-style: bold;
+  color: #E4E6EB;
+}
+
+div {
+  overflow-wrap: anywhere;
+  padding-bottom: .5em;
+}
+

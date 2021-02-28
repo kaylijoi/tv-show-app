@@ -1,6 +1,8 @@
 <div *ngIf="current">
-  <mat-card-title>Schedule</mat-card-title>
-  <span>Time: {{current.time}}</span>
-  <br>
-  <span>Day(s): {{current.days}}</span>
+  <mat-card>
+    <mat-card-title>Schedule</mat-card-title>
+    <!-- Changes spans to divs -->
+    <div>Time: {{current.time}}</div>
+    <div>Day(s): {{current.days}}</div>
+  </mat-card>
 </div>

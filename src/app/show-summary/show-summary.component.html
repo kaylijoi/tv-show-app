@@ -1,11 +1,11 @@
-<div *ngIf="current" class="summary-component">
+<div *ngIf="current">
   <mat-card>
     <img src={{current.image}}>
     <div class="title">{{current.name}}</div>
     <div class="rating">Average rating: {{current.rating}}</div>
     <br>
     <div class="summaryText" [innerHTML] = current.summary></div>
-  
   </mat-card>
-
 </div>
+
+

@@ -1,7 +1,3 @@
-/* .summary-component {
-  background-color: #424242;
-  padding:
-} */
 mat-card {
   min-height: 325px;
   background-color: #242526;
@@ -35,3 +31,5 @@ img {
   padding: 0 2em 1em 0;
   margin-bottom: auto;
 }
+
+

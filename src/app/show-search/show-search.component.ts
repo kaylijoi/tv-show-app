@@ -10,7 +10,7 @@ import { FormControl, Validators } from '@angular/forms'
 export class ShowSearchComponent implements OnInit {
   @Output() searchEvent = new EventEmitter<string>();
   
-  search = new FormControl('', [Validators.minLength(3)]);
+  search = new FormControl('', [Validators.minLength(1)]);
 
   constructor() { }
 
