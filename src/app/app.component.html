@@ -22,7 +22,9 @@
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-status></app-status>
+    <mat-card color="primary">
+      <app-status></app-status>
+    </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
  -->
@@ -32,13 +34,13 @@
 <section class="container content">
   <div class="row">
     <mat-card class="search col-lg-12">
-      <app-show-search></app-show-search>
+      <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
     </mat-card>
   </div>
   <div class="row">
     <mat-card class="outer col-lg-12">
       <mat-card class="inner col-lg-12">
-        <app-show-summary></app-show-summary>
+        <app-show-summary [current]="showInfo"></app-show-summary>
       </mat-card>
     </mat-card>
 
@@ -46,19 +48,19 @@
   <div class="row">
     <mat-card class="outer col-lg-4 col-sm-12">
       <mat-card class="inner col-lg-12">
-        <app-show-details></app-show-details>
+        <app-show-details [details]="showInfo"></app-show-details>
       </mat-card>
     </mat-card>
 
     <mat-card class="outer col-lg-4 col-sm-12">
       <mat-card class=" inner col-lg-12">
-        <app-show-schedule></app-show-schedule>
+        <app-show-schedule [current]="showInfo"></app-show-schedule>
       </mat-card>
     </mat-card>
 
     <mat-card class="outer col-lg-4 col-sm-12">
       <mat-card class="inner col-lg-12">
-        <app-status></app-status>
+        <app-status [current]="showInfo"></app-status>
       </mat-card>
     </mat-card>
   </div>

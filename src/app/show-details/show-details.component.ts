@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IShowInfo } from '../ishow-info';
-import { IShowInfoData } from '../ishow-info-data';
-import { ShowInfoService } from '../show-info.service';
 
 @Component({
   selector: 'app-show-details',
@@ -10,12 +8,19 @@ import { ShowInfoService } from '../show-info.service';
 })
 export class ShowDetailsComponent implements OnInit {
 
-  details : IShowInfo         
 
-  constructor(private showInfoService : ShowInfoService) { 
+  @Input() details : IShowInfo         
+
+  constructor() { 
     this.details ={
 
+  /* current : IShowInfo         
+
+  constructor(private showInfoService : ShowInfoService) { 
+    this.current ={
+ */
      
+
       id: 1,
       name: '',
       summary: '',
@@ -23,20 +28,23 @@ export class ShowDetailsComponent implements OnInit {
       rating: 0,
       status: '',
       runtime: 0,
-      premier: new Date,
+      premier: new Date(),
       time: '',
       days: '',
       Network: '',
-      Genres: '',
+      Genres: [],
       OfficialSite: ''
     };
-    
     }
   
+
+  ngOnInit(): void {  }
+
   
 
-  ngOnInit(): void {
-    this.showInfoService.getShowInfo('The Widower').subscribe(data => this.details = data);
-  }
+  /* ngOnInit(): void {
+    this.showInfoService.getShowInfo('Lost').subscribe(data => this.current = data);
+  } */
+
 }
   
