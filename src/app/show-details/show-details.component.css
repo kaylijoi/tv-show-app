@@ -1,4 +1,7 @@
 #inner3 {
-  /* display: table-cell; */
+  /* display:flex; */
+  flex-flow: wrap;
+  overflow-wrap:inherit;
   white-space: nowrap; 
+  /* overflow:-moz-hidden-unscrollable; */
 }

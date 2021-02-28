@@ -1,13 +1,18 @@
 
-  <div id="main" *ngIf="details">
-    <mat-card-title class ="title">Show Details</mat-card-title>
-    <div id="wrapper">
-
+  <div fxLayout="row wrap" fxLayoutWrap class="cards" *ngIf="details">
+    <!-- <mat-card-title class ="title">Show Details</mat-card-title> -->
+        <mat-card-subtitle > <strong>Network: </strong> {{details.Network}} </mat-card-subtitle>
+        <mat-card-subtitle> <strong>Generes: </strong> {{details.Genres}} </mat-card-subtitle>
+        <mat-card-subtitle id ="inner3"> <strong>Official Site: </strong> <a href= "{{details.OfficialSite}}"> {{details.OfficialSite}}</a></mat-card-subtitle>
+    
+    <!-- <div id="wrapper">
+      
       <div id ="inner1"> <strong>Network:</strong> {{details.Network}} </div> 
       <div id ="inner2"> <strong>Generes:</strong> {{details.Genres}} </div>
 
-      <!-- <div class="summaryText" [innerHTML] = current.summary></div> -->
-      <div id ="inner3"> <strong>Official Site:</strong><a href= "{{details.OfficialSite}}"> {{details.OfficialSite}}</a></div>
+      
+      
+      <div id ="inner3"> <strong>Official Site:</strong><a href= "{{details.OfficialSite}}"> {{details.OfficialSite}}</a></div> -->
      
 
   </div>
