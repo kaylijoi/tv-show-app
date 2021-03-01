@@ -1,4 +1,4 @@
-<div *ngIf="current">
+<div *ngIf="current.name.length >= 1">
   <mat-card>
     <mat-card-title class="title">Status</mat-card-title>
       <div>Status: {{current.status}}</div>
@@ -6,14 +6,5 @@
       <div>Premiered Date: {{current.premier}}</div>
   </mat-card>
 </div>
-
-
-    <!-- <br>
-    <span>Status: {{current.status}}</span>
-    <br>
-    <span>Runtime: {{current.runtime}}</span>
-    <br>
-    <span>Premiered Date: {{current.premier}}</span>
-    <br> -->
 
 

@@ -43,7 +43,6 @@ export class ShowInfoService {
         days: data.schedule.days,
 
         //Show Details Data
-        
         Genres: data.genres,
         OfficialSite: data.officialSite,
         Network: data.network.name

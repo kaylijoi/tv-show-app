@@ -1,6 +1,4 @@
 export interface IShowInfo {
-
-
   id: number
   //title
   name: string
@@ -22,6 +20,4 @@ export interface IShowInfo {
   Genres: string[]
   OfficialSite: string
   Network: string
-
-
 }

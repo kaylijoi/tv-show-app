@@ -1,11 +1,3 @@
-#inner3 {
-  /* display:flex; */
-  flex-flow: wrap;
-  overflow-wrap:inherit;
-  white-space: nowrap; 
-  /* overflow:-moz-hidden-unscrollable; */
-}
-
 mat-card {
   background-color: #242526;
 }
