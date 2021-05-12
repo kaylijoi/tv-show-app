@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
+## Description
+This application displays TV Show information using the tvmaze api. 
+
+## Specifications
+* The application should have a search function, returning the first best match. 
+* The application at minimum, should display a summary, number of episodes, and current status.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
